@@ -1,0 +1,11 @@
+<testsuite failures="1" name="karate/demo/features/complexJson.feature" skipped="0" tests="1" time="0.019706">
+  <testcase classname="karate.demo.features.complexJson" name="1" time="0.019706">
+    <failure message="complexJson.feature:23 - path: $, actual: {name=Billie, kittens=[{&quot;id&quot;:23,&quot;name&quot;:&quot;Bob&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;Wild&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Wild&quot;,&quot;salary&quot;:10000}]}, expected: {id=23}, reason: all key-values did not match, expected has un-matched keys: [id]">* def ResponseJson = read ('../data/complexJsonResponse.json') ............ passed
+* def part = { id : 23 } .................................................. passed
+* match ResponseJson contains '#(^part)' .................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: complexJson.feature:23 - path: $, actual: {name=Billie, kittens=[{"id":23,"name":"Bob"},{"id":42,"name":"Wild"},{"id":53,"name":"Wild","salary":10000}]}, expected: {id=23}, reason: all key-values did not match, expected has un-matched keys: [id]
+	at ✽.* match ResponseJson contains '#(^part)' (complexJson.feature:23)</failure>
+  </testcase>
+</testsuite>

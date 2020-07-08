@@ -1,0 +1,3 @@
+10:55:38.469 Environment variable value is :  null 
+10:55:38.470 Environment variable value is :  null 
+10:55:38.699 assertion failed: path: $, actual: {name=Billie, kittens=[{"id":23,"name":"Bob"},{"id":42,"name":"Wild"},{"id":53,"name":"Wild","salary":10000}]}, expected: {id=23}, reason: all key-values did not match, expected has un-matched keys: [id]
