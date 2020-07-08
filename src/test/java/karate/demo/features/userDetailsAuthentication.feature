@@ -1,11 +1,11 @@
-#@ignore
+@ignore
 Feature: API Authentication
 
   Background:
     * url 'https://reqres.in/api/register'
 
   Scenario: Authentication Test
-    Given path 'token'
+#    Given path 'token'
     And form field grant_type = clientCredentials
     And form field client_id = ''
     And form field client_secret = ''

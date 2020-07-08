@@ -15,7 +15,11 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-@KarateOptions(tags={"~@ignore"})
+//@KarateOptions(tags={"@RegistrationForMultipleUsers"})
+//@KarateOptions(tags={"@UpdateUser"})
+//@KarateOptions(tags={"@ConnectToMysql"})
+@KarateOptions(tags={"@ComplexJson"})
+
 public class TestRunner {
     @Test
     public void testParallel() {
